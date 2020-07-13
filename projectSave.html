@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The more you travel the more you discover</title>
+  <style>
+  	title{
+  		color:red;
+  	}
+  	h1{
+  		color:black;
+  		font-size: 20px;
+  		margin: 30px;
+  		text-align: center;
+  	}
+  	body{
+  		background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/World_-_time_zones_map_%282011%29.svg/1280px-World_-_time_zones_map_%282011%29.svg.png');
+  		
+  	}
+  	
+  	}
+  	img{
+  		display: block;
+  		margin-right: auto;
+  		margin-left: auto;
+  		width:30%;
+  	}
+  	div{
+ 		position: absolute;
+  		left: 520px;
+  		z-index: -1;
+  		size: 14;
+  		text-align: center;
+  	}
+  	#africa{
+  		color:white;
+  		background-color: black;
+  		font-size: 25px;
+  	}
+  	
+
+  </style>
+</head>
+<body>
+	<h1>The more you travel the more you discover</h1>
+	<div>
+		<button id='africa' onclick="africanCountries()">Africa</button>
+		<button onclick="europeanCountries()">Europe</button>
+		<button onclick="asianCountries()">Asia</button>
+		<button onclick="americanCountries()">America</button>
+		<button onclick="southAmericanCountries()">South America</button>
+	
+	
+		<ul id='africanCountries'>
+			<li><a href="https://www.w3schools.com">tunisia</a></li>
+			<li>subsaherian countries</li>
+			<li>central africa</li>
+			<li>southern countries</li>
+		</ul>
+		<ul id='europeanCountries'>
+			<li>italy</li>
+			<li>greece</li>
+			<li>germany</li>
+			<li>norway</li>
+		</ul>
+		<ul id='asianCountries'>
+			<li>south-korea</li>
+			<li>china</li>
+			<li>turkey</li>
+			<li>lebanon</li>
+		</ul>
+		<ul id='americanCountries'>
+			<li>canada</li>
+			<li>usa</li>
+			<li>salvador</li>
+			<li>mexico</li>
+		</ul>
+		<ul id='southAmericanCountries'>
+			<li>brazil</li>
+			<li>argentina</li>
+			<li>chile</li>
+		</ul>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script>
+		$('#africanCountries').hide();
+		$('#europeanCountries').hide();
+		$('#asianCountries').hide();
+		$('#americanCountries').hide();
+		$('#southAmericanCountries').hide();
+		var click1=0;
+		function africanCountries(){
+			if(click1%2===0){
+				$('#africanCountries').show();
+				click1++;
+			}
+			else if(click1%2===1){
+				$('#africanCountries').hide();
+				click1++;
+			}
+			
+		}
+		var click2=0;
+		function europeanCountries(){
+			if(click2%2===0){
+				$('#europeanCountries').show();
+				click2++;
+			}
+			else if(click2%2!==0){
+				$('#europeanCountries').hide();
+				click2++;
+			}
+		}
+		function asianCountries(){
+			if($('#asianCountries').is(":visible")){
+				$('#asianCountries').hide();
+			}
+			else {
+				$('#asianCountries').show();
+			}
+		}
+		function americanCountries(){
+			if($('#americanCountries').is(":visible")){
+				$('#americanCountries').hide();
+			}
+			else{
+				$('#americanCountries').show();
+			}
+		}
+		function southAmericanCountries(){
+		   if($('#southAmericanCountries').is(":visible")){
+		   	$('#southAmericanCountries').hide();
+		   }
+			else {
+				$('#southAmericanCountries').show();
+			}
+		} 
+	</script>
+</body>
+</html> 

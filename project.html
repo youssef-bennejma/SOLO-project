@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The more you travel the more you discover</title>
+  <style>
+  	title{
+  		color:red;
+  	}
+  	h1{
+  		color:black;
+  		font-size: 20px;
+  		margin: 30px;
+  		text-align: center;
+  	}
+  	body{
+  		background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDsV5jK3q5khzhh9FkFEONkIDvc70MEEcgOw&usqp=CAU');
+  		background-size: 1250px;
+  		background-position: center top;
+  	}
+  	
+  	}
+  	img{
+  		display: block;
+  		margin-right: auto;
+  		margin-left: auto;
+  		width:30%;
+  	}
+  	div{
+ 		position: absolute;
+  		left: 520px;
+  		z-index: -1;
+  		size: 14;
+  		text-align: center;
+  	}
+  	
+
+  </style>
+</head>
+<body>
+	<h1>The more you travel the more you discover</h1>
+	<div>
+		<button id='africa' onclick="displayLists('africanCountries')">Africa</button>
+		<button onclick="displayLists('europeanCountries')">Europe</button>
+		<button onclick="displayLists('asianCountries')">Asia</button>
+		<button onclick="displayLists('americanCountries')">America</button>
+		<button onclick="displayLists('southAmericanCountries')">South America</button>
+	
+	
+		<ul class='button' id='africanCountries'>
+			<li onclick="displayCountries('Tunisia')">tunisia</li>
+			<li onclick="displayCountries('Egypt')">Egypt</li>
+			<li onclick="displayCountries('RDCongo')" >RD Congo</li>
+		</ul>
+		<ul class='button' id='europeanCountries'>
+			<li onclick="displayCountries('italy')">italy</li>
+			<li onclick="displayCountries('greece')">greece</li>
+			<li onclick="displayCountries('norway')">norway</li>
+		</ul>
+		<ul class='button' id='asianCountries'>
+			<li onclick="displayCountries('south-korea')">south-korea</li>
+			<li onclick="displayCountries('china')">china</li>
+			<li onclick="displayCountries('turkey')">turkey</li>
+		</ul>
+		<ul class='button' id='americanCountries'>
+			<li onclick="displayCountries('usa')">usa</li>
+			<li onclick="displayCountries('salvador')">salvador</li>
+			<li onclick="displayCountries('mexico')">mexico</li>
+		</ul>
+		<ul class='button' id='southAmericanCountries'>
+			<li onclick="displayCountries('brazil')">brazil</li>
+			<li onclick="displayCountries('argentina')">argentina</li>
+			<li onclick="displayCountries('chile')">chile</li>
+		</ul>
+		<ul class='infoList'id='Tunisia'>
+			<li><a href="https://www.youtube.com/watch?v=FlarfmOPCnw" target="blank">video</li>
+			<li><a href="https://www.visatunisia.com/" target="blank">Visa application</li>
+		</ul>
+		<ul class='infoList'id='Egypt'>
+			<li><a href="https://www.youtube.com/watch?v=rsv4drcgHys" target="blank">video</li>
+			<li><a href="https://www.travelstoegypt.com/?utm_source=google&utm_medium=cpc&gclid=CjwKCAjwjLD4BRAiEiwAg5NBFiCxGnYvBIDp254_Xjd7wmBRu4daEWoutXwGy5hTYY6bixAGpDAA7RoCLacQAvD_BwE" target="blank">visa application</li>
+		</ul>
+		<ul class='infoList'id='RDCongo'>
+			<li><a href="https://www.youtube.com/watch?v=CyvhWywAy6s" target="blank">video</li>
+			<li><a href="https://www.aeroport-kinshasa.com/en/visa_on_arrival_congo.php" target="blank">visa application</li>	
+		</ul>
+		<ul class='infoList'id='italy'>
+			<li><a href="https://www.youtube.com/watch?v=FlRwssZYRM0" target="blank">video</li>
+			<li><a href="https://www.schengenvisainfo.com/italy-visa/" target="blank">visa application</li>
+		</ul>
+		<ul class='infoList'id='greece'>
+			<li><a href="https://www.youtube.com/watch?v=lepdqiCF-W8" target="blank">video</li>
+			<li><a href="https://www.mfa.gr/en/visas/visas-for-foreigners-traveling-to-greece/" target="blank">visa application</li>
+		</ul>
+		<ul class='infoList' id='norway'>
+			<li><a href="https://www.youtube.com/watch?v=evoJ1sCPIR0" target="blank">video</li>
+			<li><a href="https://www.schengenvisainfo.com/norway-visa/" target="blank">visa application</li>	
+		</ul>
+		<ul class='infoList' id='south-korea'>
+			<li><a href="https://www.youtube.com/watch?v=sr3O7ArQTYY" target="blank">video</li>
+			<li><a href="https://www.visa.go.kr/?LANG_TYPE=EN" target="blank">visa application</li>
+		</ul>
+		<ul class='infoList' id='china'>
+			<li><a href="https://www.youtube.com/watch?v=tBNkeXmq4IQ" target="blank">video</li>
+			<li><a href="https://www.visaforchina.org/" target="blank">visa application</li>
+		</ul>
+		<ul class='infoList' id='turkey'>
+			<li><a href="https://www.youtube.com/watch?v=r8rZQKXijb8" target="blank">video</li>
+			<li><a href="https://www.evisa.gov.tr/fr/" target="blank">visa application</li>
+		</ul>
+		<ul class='infoList' id='usa'>
+			<li><a href="https://www.youtube.com/watch?v=98H5AN_vfOY" target="blank">video</li>
+			<li><a href="https://travel.state.gov/content/travel/en/us-visas.html" target="blank">visa application</li>
+		</ul>
+		<ul class='infoList' id='salvador'>
+			<li><a href="https://www.youtube.com/watch?v=34ElBmKkRq4" target="blank">video</li>
+			<li><a href="https://www.ivisa.com/el-salvador-visa" target="blank">visa application</li>
+		</ul>
+		<ul class='infoList' id='mexico'>
+			<li><a href="https://www.youtube.com/watch?v=IAl5nlVPH1w" target="blank">video</li>
+			<li><a href="https://embamex.sre.gob.mx/sudafrica/index.php/english/visa-for-mexico" target="blank">visa application</li>
+		</ul>
+		<ul class='infoList' id='brazil'>
+			<li><a href="https://www.youtube.com/watch?v=LGZ707KpeW4" target="blank">video</li>
+			<li><a href="https://visacentral.com/brazil-visa" target="blank">visa application</li>	
+		</ul>
+		<ul class='infoList' id='argentina'>
+			<li><a href="https://www.youtube.com/watch?v=LiKW2ruKXfk" target="blank">video</li>
+			<li><a href="https://cancilleria.gob.ar/en/service/foreigners/visas" target="blank">visa application</li>
+		</ul>
+		<ul class='infoList' id='chile'>
+			<li><a href="https://www.youtube.com/watch?v=5oB7QDk8yCs" target="blank">video</li>
+			<li><a href="https://chile.gob.cl/wellington/visa-turista" target="blank">visa application</li>	
+		</ul>
+		
+	</div>
+		
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script>
+		$('.button').hide();
+		$('.infoList').hide();
+		
+	
+		function displayLists(id){
+			if(id==='africanCountries'){
+				$('.button').hide();
+				if($('#africanCountries').is(":visible")){
+					$('#africanCountries').hide();
+				}
+				else {
+					$('#africanCountries').show();
+				
+				}
+			}
+			else if(id==='europeanCountries'){
+				$('.button').hide();
+				if($('#europeanCountries').is(":visible")){
+					$('#europeanCountries').hide();
+				}
+				else{
+					$('#europeanCountries').show();
+				}
+			}
+			else if(id==='asianCountries'){
+				$('.button').hide();
+				if($('#asianCountries').is(":visible")){
+					$('#asianCountries').hide();
+				}
+				else{
+					$('#asianCountries').show();
+				}
+			}
+			else if(id==='americanCountries'){
+				$('.button').hide();
+				if($('#americanCountries').is(":visible")){
+					$('#americanCountries').hide();
+				}
+				else{
+					$('#americanCountries').show();
+				}
+			}
+			else if(id==='southAmericanCountries'){
+				$('.button').hide();
+				if($('#southAmericanCountries').is(":visible")){
+					$('#southAmericanCountries').hide();
+				}
+				else{
+					$('#southAmericanCountries').show();
+				}
+			}
+		}
+		function displayCountries(countryName){
+			if(countryName==='Tunisia'){
+				if($('#Tunisia').is(":visible")){
+					$('#Tunisia').hide();
+				}
+				else{
+					$('#Tunisia').show();
+				}
+			}
+			else if(countryName==='Egypt'){
+				if($('#Egypt').is(":visible")){
+					$('#Egypt').hide();
+				}
+				else{
+					$('#Egypt').show();
+				}	
+			}
+			else if(countryName==='RDCongo'){
+				if($('#RDCongo').is(":visible")){
+					$('#RDCongo').hide();
+				}
+				else{
+					$('#RDCongo').show();
+				}
+			}
+			else if(countryName==='italy'){
+				if($('#italy').is(":visible")){
+					$('#italy').hide();
+				}
+				else {
+					$('#italy').show();
+				}	
+			}
+			else if(countryName==='greece'){
+				if($('#greece').is(":visible")){
+					$('#greece').hide();
+				}
+				else {
+					$('#greece').show();
+				}
+			}
+			else if(countryName==='norway'){
+				if($('#norway').is(":visible")){
+					$('#norway').hide();
+				}
+				else {
+					$('#norway').show();
+				}
+			}
+			else if(countryName==='south-korea'){
+				if($('#south-korea').is(":visible")){
+					$('#south-korea').hide();
+				}
+				else {
+					$('#south-korea').show();
+				}
+			}
+			else if(countryName==='china'){
+				if($('#china').is(":visible")){
+					$('#china').hide();
+				}
+				else {
+					$('#china').show();
+				}	
+			}
+			else if(countryName==='turkey'){
+				if($('#turkey').is(":visible")){
+					$('#turkey').hide();
+				}
+				else{
+					$('#turkey').show();
+				}
+			}
+			else if(countryName==='usa'){
+				if($('#usa').is(":visible")){
+					$('#usa').hide();
+				}
+				else{
+					$('#usa').show();
+				}
+			}
+			else if(countryName==='salvador'){
+				if($('#salvador').is(":visible")){
+					$('#salvador').hide();
+				}
+				else {
+					$('#salvador').show();
+				}
+			}
+			else if(countryName==='mexico'){
+				if($('#mexico').is(":visible")){
+					$('#mexico').hide();
+				}
+				else{
+					$('#mexico').show();
+				}
+			}
+			else if(countryName==='brazil'){
+				if($('#brazil').is(":visible")){
+					$('#brazil').hide();
+				}
+				else {
+					$('#brazil').show();
+				}
+			}
+			else if(countryName==='argentina'){
+				if($('#argentina').is(":visible")){
+					$('#argentina').hide();
+				}
+				else{
+					$('#argentina').show();
+				}
+			}
+			else if(countryName==='chile'){
+				if($('#chile').is(":visible")){
+					$('#chile').hide();
+				}
+				else{
+					$('#chile').show();
+				}
+			}
+		}							
+	</script>
+</body>
+</html>  
