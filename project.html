@@ -11,7 +11,7 @@
   	}
   	h1{
   		color:black;
-  		font-size: 20px;
+  		font-size: 40px;
   		margin: 30px;
   		text-align: center;
   	}
@@ -35,6 +35,13 @@
   		size: 14;
   		text-align: center;
   	}
+  	.button{
+  		font-size: 20px;
+  	}
+  	.continent:hover{
+  		background-color: #BFBEBA;
+  	}
+
   	
 
   </style>
@@ -42,11 +49,11 @@
 <body>
 	<h1>The more you travel the more you discover</h1>
 	<div>
-		<button id='africa' onclick="displayLists('africanCountries')">Africa</button>
-		<button onclick="displayLists('europeanCountries')">Europe</button>
-		<button onclick="displayLists('asianCountries')">Asia</button>
-		<button onclick="displayLists('americanCountries')">America</button>
-		<button onclick="displayLists('southAmericanCountries')">South America</button>
+		<button class='continent' onclick="displayLists('africanCountries')">Africa</button>
+		<button class='continent' onclick="displayLists('europeanCountries')">Europe</button>
+		<button class='continent' onclick="displayLists('asianCountries')">Asia</button>
+		<button class='continent' onclick="displayLists('americanCountries')">America</button>
+		<button class='continent' onclick="displayLists('southAmericanCountries')">South America</button>
 	
 	
 		<ul class='button' id='africanCountries'>
